@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+こちらのリポジトリはRailsTutorialの5.1のバージョンの学習のために使用いたします。
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ただし開発環境はDockerにてコンテナ化し、
+DBはMySQL 5.7を使用しております。
