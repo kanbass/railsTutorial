@@ -1,5 +1,5 @@
 FROM ruby:2.7.2
-RUN apt-get update -qq && apt-get install -y build-essential nodejs sudo
+RUN apt-get update -qq && apt-get install -y build-essential nodejs sudo tmux
 
 #bootstrapのJsを使うためにはWebpackerをインストールする必要がある。
 #本当は「&&」でつなげたほうがいいと思う、、、キャッシュが軽くなるから。
