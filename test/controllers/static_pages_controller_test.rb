@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 
@@ -11,7 +11,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   def teardown
     # コントローラがキャッシュを使っている場合、テスト後にリセットしておくとよい
     Rails.cache.clear
-  end 
+  end
 
   test "should get root" do
     get root_url
@@ -37,10 +37,9 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "About | #{@base_title}"
   end
 
-  test "should get contact" do 
+  test "should get contact" do
     get contact_path
     assert_response :success
     assert_select "title", "Contact | #{@base_title}"
   end
-
 end
